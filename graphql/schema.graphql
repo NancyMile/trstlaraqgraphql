@@ -43,6 +43,9 @@ type User {
 
     "When the account was last updated."
     updated_at: DateTime!
+
+    "user has many tasks"
+    tasks: [Task!] @hasMany
 }
 
 type Task {
